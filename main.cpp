@@ -7,11 +7,18 @@
 //
 
 #include <iostream>
+#include <string>
+#include <vector>
+#include <thread>
+#include <stdio.h>
+#include "TaskTwo.hpp"
+#include "TaskOne.hpp"
 using namespace std;
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    cout << "test";
-
+    // Task 1 HW3
+    TaskOne::Task();
+    // Task 2 HW3
+    TaskTwo::Task();
+    // Task
     return 0;
 }
