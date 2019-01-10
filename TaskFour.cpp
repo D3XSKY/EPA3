@@ -28,12 +28,11 @@ void TaskFour::Task(){
         "Javens", "Renee", "Harrison", "Rose", "Setzer", "Cathy",
         "Pike", "Gordon", "Holland", "Beth"};
     
-    // Insert your code to complete this program
     cout << "The names on the list in no particlular order are: " << endl;
     PrintArray(names, arraySize);
     
     cout << "\n\n";
-    // Calling the sorted array
+    // Sorting the array
     SelectionSort(names, arraySize);
     
     // Displaying sorted array
@@ -41,6 +40,8 @@ void TaskFour::Task(){
     PrintArray(names, arraySize);
     
 }
+// Selection sort
+//  https://stackoverflow.com/a/47619887/9648082
 void TaskFour::SelectionSort(string arr[], int size)
 {
     int startScan, minIndex;
@@ -63,7 +64,7 @@ void TaskFour::SelectionSort(string arr[], int size)
         arr[startScan] = minValue;
     }
 }
-    // Function to display the array's conents
+// Function that prints out the array
 void TaskFour::PrintArray(string arr[], int size)
     {
         for (int count = 0; count < size; count++) {

@@ -14,9 +14,12 @@
 #include <vector>
 #include <thread>
 #include <stdio.h>
+#include <future>
 using namespace std;
 class TaskFive{
 public:
     static void Task();
+    static int Sum(int x, int y, int z);
+    static int Multiplication(int x, int y, int z);
 };
 #endif /* TaskFive_hpp */
