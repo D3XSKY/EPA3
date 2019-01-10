@@ -18,7 +18,7 @@ using namespace std;
  6. Investigate the possibility of parallelizing the code in Task 2 from HW1. Write a short text file explaining whether it is possible and (if yes) implement the described parallelization.
  
 For this task I wanted to give it a try and I modified my task 2 from homework so for loop in that task executes in separate thread.
- 
+ https://www.geeksforgeeks.org/multithreading-in-cpp/
  */
 // Print * character based on input
 void TaskSix::PrintStars(int n){
