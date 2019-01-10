@@ -15,11 +15,12 @@
 #include <future>
 using namespace std;
 /* My comment on Task five
+ 5. Investigate the possibility of parallelizing the code in Task 1 from HW1. Write a short text file explaining whether it is possible and (if yes) implement the described parallelization.
  
  Even though I didn't have time to research a lot about this, I did not perfectly understand when and how can we determine whether we should use threads. I can make only assumptions right now. Moreover, in our case with first task from homework 1 we could do it for adding and summing operations, just for the sake of an example.
  
  PS: If it is possible I would like to discuss this with you sometimes in the class if it's possible because I would like to get few points so it will be easier for me to study further.
- 
+ https://stackoverflow.com/a/7687116/9648082
  */
 void TaskFive::Task(){
     /*
