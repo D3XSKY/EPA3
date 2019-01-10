@@ -14,6 +14,8 @@
 #include "TaskTwo.hpp"
 #include "TaskOne.hpp"
 #include "TaskThree.hpp"
+#include "TaskFour.hpp"
+#include "TaskFive.hpp"
 using namespace std;
 int main(int argc, const char * argv[]) {
     // Task 1 HW3
@@ -22,5 +24,9 @@ int main(int argc, const char * argv[]) {
     TaskTwo::Task();
     // Task 3 HW 3
     TaskThree::Task();
+    // Task 4 HW 3
+    TaskFour::Task();
+    // Task 5 HW 3
+    TaskFive::Task();
     return 0;
 }

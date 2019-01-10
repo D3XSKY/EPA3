@@ -49,6 +49,7 @@ void TaskThree::Task(){
     cout << "\n" <<  endl;
 }
 // method to perform bubble sort on an array of characters with defined size that is passed to it
+//http://www.cplusplus.com/forum/beginner/16476/#msg82326
 void TaskThree::BubbleSort(char Array[], int size)
 {
     int result;
