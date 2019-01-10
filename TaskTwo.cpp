@@ -13,23 +13,49 @@
 #include <thread>
 #include <stdio.h>
 using namespace std;
-// method to execute task 1 from homework which is returning the n-th element of the fibonnaci sequence using recursion
+/*2. Make a function that converts decimal to hexadecimal number by using recursive division by 16 (as you would do on a paper). The function must return a string that represents the hexadecimal number.*/
 void TaskTwo::Task(){
-    int arrayIndex=0;
-    int element=0;
-    cout << "Please enter element of fibonnaci array to get its value:"<< endl;
-    cin >> arrayIndex;
-    element = TaskTwo::CalculateFibonnaci(arrayIndex);
-    cout << "Value of the "<< arrayIndex << "th" << " element in the Fibonnaci sequence is: " << element << endl;
+    cout << "Please enter decimal number that should be converted to HEX: " << endl;
+    int number;
+    cin >> number;
+    cout << ConvertToHex(number);
+    
+    
 }
-// recursive function to calculate value of the n-th element of the fibonnaci sequence
-//https://stackoverflow.com/a/51692478/9648082
-unsigned TaskTwo::CalculateFibonnaci(unsigned n) {
-    if(n == 0) return 0;
-    if(n == 1) return 1;
-    return CalculateFibonnaci(n-1) + CalculateFibonnaci(n-2);
+string TaskTwo::ConvertToHex (int decimal) {
+    string hexstr = "";
+    while (decimal>0) {
+        char remainder;
+        int calculate = decimal%16;
+        if (calculate>=10) {
+            switch (calculate) {
+                case 10:
+                    remainder = 'A';
+                    break;
+                case 11:
+                    remainder = 'B';
+                    break;
+                case 12:
+                    remainder = 'C';
+                    break;
+                case 13:
+                    remainder = 'D';
+                    break;
+                case 14:
+                    remainder = 'E';
+                    break;
+                case 15:
+                    remainder = 'F';
+                    break;
+            }
+        } else {
+            remainder = calculate+48;
+        }
+        hexstr = remainder+hexstr;
+        decimal = decimal/16;
+    }
+    return hexstr;
+    
 }
-/*2. Implement two functions:
- - Recursive function that calculates the n-th Fibonacci number.
- - Function that calculates the n-th Fibonacci number with using recursion. */
+
 

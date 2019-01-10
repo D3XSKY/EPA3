@@ -13,10 +13,11 @@
 #include <vector>
 #include <thread>
 #include <stdio.h>
+using namespace std;
 class TaskTwo{
 public:
     static void Task();
-    static unsigned CalculateFibonnaci(unsigned number);
+    static string ConvertToHex (int decimal);
 };
 
 #endif /* TaskTwo_hpp */

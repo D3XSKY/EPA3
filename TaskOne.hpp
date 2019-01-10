@@ -17,6 +17,7 @@ class TaskOne{
 public:
     static void Task();
     static int CalculateFibonnaciNoRecursion(int number);
+    static unsigned CalculateFibonnaci(unsigned n);
 };
 
 #endif /* TaskOne_hpp */
