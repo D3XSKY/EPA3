@@ -13,12 +13,14 @@
 #include <stdio.h>
 #include "TaskTwo.hpp"
 #include "TaskOne.hpp"
+#include "TaskThree.hpp"
 using namespace std;
 int main(int argc, const char * argv[]) {
     // Task 1 HW3
     TaskOne::Task();
     // Task 2 HW3
     TaskTwo::Task();
-    // Task
+    // Task 3 HW 3
+    TaskThree::Task();
     return 0;
 }
